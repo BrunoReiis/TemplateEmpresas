@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 98vw;
+    font-family: Arial;
+    padding-top: 40px;
+    color: white;
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.principal h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.principal p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.redeSociais{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.redeSociais li{
+    margin: 0 10px;
+}
+
+.redeSociais a{
+    text-decoration: none;
+    color: white;
+}
+
+.redeSociais a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.redeSociais a:hover i{
+    color: red;
+}
+
+.designCopyright{
+    background: black;
+    width: 98vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.designCopyright p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.designCopyright span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
