@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.main{
+    display: grid;
+    margin: 200px 90px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-top: 80px;
+    margin-bottom: 200px;
+    margin-right: 30px;
+}
+
+.main .card{
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main .card .front{
+    height: 370px;
+    width: 300px;
+    background: #D3D3D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    transition: all 0.5 ease;
+}
+
+.card .front .icon{
+    height: 80px;
+}
+
+.card .front .icon i{
+    font-size: 65px;
+}
+
+.card .front span,
+.card .back span{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card .front .icon i,
+.card .front span{
+    background: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 370px;
+    width: 300px;
+    padding: 30px;
+    color: black;
+    opacity: 0;
+    transform-style: preserve-3d;
+    background: #D3D3D3;
+    backface-visibility: hidden;
+    transform: translateY(110px) rotateX(-90deg);
+    transition: all 0.5 ease;
+}
+
+.card .back p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.card:hover .back{
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+.card:hover .front{
+    transform: translateY(-110px) rotateX(90deg);
+    opacity: 0;
+}
+
+.iconMain{
+    background: gray;
+    max-height: 450px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.textIconMain{
+    margin-top: -50px;
+    width: auto;
+    display: flex;
+}
+
+.textIconMain span{
+    font-weight: bold;
+    margin-right: -60px;
+    margin-top: 30px;
+}
+
+.textIconMain p{
+    margin-top: 60px;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 300px;
+    margin-left: -40px;
+}
+
+.iconText i{
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-right: 60px;
+    transform:scale(5);
+}
+
+.textIconMain2{
+    margin-top: -50px;
+    width: auto;
+    display: flex;
+}
+
+.textIconMain2 span{
+    margin-top: 130px;
+    font-weight: bold;
+    margin-right: -60px;
+}
+
+.textIconMain2 p{
+    margin-top: 160px;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 300px;
+    margin-left: -40px;
+    /* margin-left: 100px; */
+}
+
+.iconText2 i{
+    margin-top: 200px;
+    margin-left: 70px;
+    margin-right: 60px;
+    transform:scale(5);
+}
+
+.titleh2{
+    margin-bottom: 70px;
+    margin-top: -100px;
+}
